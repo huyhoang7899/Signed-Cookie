@@ -24,8 +24,9 @@
       "phone": "0123123456",
       "id": "goqYEcFye",
       "email": "hoanghuy1@gmail.com",
-      "password": "123123",
-      "isAdmin": false
+      "password": "$2b$10$x/egRE5NY.7UCmd4QDR2.uOjr/wZ0A06WIu6ByG3QqOHT8ksZEmTq",
+      "isAdmin": false,
+      "wrongLoginCount": 2
     },
     {
       "name": "My Phung",
@@ -34,7 +35,7 @@
       "phone": "0789123456",
       "id": "SNFJkKNhR",
       "email": "hoanghuy2@gmail.com",
-      "password": "123123",
+      "password": "$2b$10$x/egRE5NY.7UCmd4QDR2.uOjr/wZ0A06WIu6ByG3QqOHT8ksZEmTq",
       "isAdmin": false
     },
     {
@@ -44,8 +45,9 @@
       "phone": "0456789123",
       "id": "3NIE_6dHw",
       "email": "admin@gmail.com",
-      "password": "123123",
-      "isAdmin": true
+      "password": "$2b$10$x/egRE5NY.7UCmd4QDR2.uOjr/wZ0A06WIu6ByG3QqOHT8ksZEmTq",
+      "isAdmin": true,
+      "wrongLoginCount": 0
     }
   ],
   "transactions": [

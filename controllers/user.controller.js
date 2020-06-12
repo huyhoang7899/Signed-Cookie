@@ -4,7 +4,7 @@ const shortid = require('shortid');
 module.exports.index = function(req, res) {
   res.render('users/index', {
     users: db.get('users').value(),
-    userLogin: db.get('users').find({ id: req.cookies.userId}).value()
+    userLogin: db.get('users').find({ id: req.signedCookies.userId}).value()
   });
 }
 
@@ -36,7 +36,7 @@ module.exports.delete = function(req, res) {
 
 module.exports.search = function(req, res) {
   var q = req.query.q;
-  var userId = req.cookies.userId;
+  var userId = req.signedCookies.userId;
   var user = db.get('users').find({ id: userId}).value();
   var matchedUser = db.get('users').value();
   if(q) {

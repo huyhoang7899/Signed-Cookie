@@ -5,7 +5,7 @@ var db = require('../db');
 module.exports.index = function(req, res) {
   res.render('books/index',{
    books: db.get('books').value(),
-   user: db.get('users').find({ id: req.cookies.userId}).value()
+   user: db.get('users').find({ id: req.signedCookies.userId}).value()
   });
 }
 
@@ -29,7 +29,7 @@ module.exports.delete = function(req, res) {
 
 module.exports.search = function(req, res) {
   var q = req.query.q;
-  var userId = req.cookies.userId;
+  var userId = req.signedCookies.userId;
   var user = db.get('users').find({ id: userId}).value();
   var matchedBook = db.get('books').value();
   if(q) {

@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-app.use(cookieParser());
+app.use(cookieParser('qGMCswAGm7ai6Xpp9STG'));
 
 app.set('view engine', 'pug');
 app.set('views', './views');

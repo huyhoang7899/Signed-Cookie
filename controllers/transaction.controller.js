@@ -2,7 +2,7 @@ const shortid = require('shortid');
 const db = require('../db');
 
 module.exports.index = function(req, res) {
-  var userId = req.cookies.userId;
+  var userId = req.signedCookies.userId;
   var user = db.get('users').find({ id: userId}).value();
   var transactions = db.get('transactions').value();
 
@@ -37,7 +37,7 @@ module.exports.delete = function(req, res) {
 }
 
 module.exports.search = function(req, res) {
-  var userId = req.cookies.userId;
+  var userId = req.signedCookies.userId;
   var user = db.get('users').find({ id: userId}).value();
   var q = req.query.q;
   var matchedTransaction = db.get('transactions').value();
