@@ -1,0 +1,13 @@
+extends ../../layouts/layout.pug
+
+block content
+  h1 Create book
+
+  form(action="/books/create" method="POST")
+    .form-group
+      label(for='inputName') Name
+      input#inputName.form-control(name="title", type='text')
+    .form-group
+      label(for='inputAuthor') Author
+      input#inputAuthor.form-control(name="description", type='text')
+    button.btn.btn-primary(type='submit') Create

@@ -1,0 +1,83 @@
+{
+  "books": [
+    {
+      "title": "Đắc Nhân Tâm ",
+      "description": "Dale Carnegie",
+      "id": "P0bvW9E3I"
+    },
+    {
+      "title": "Lão Hạc",
+      "description": "Nam Cao",
+      "id": "GhMHmsKI1"
+    },
+    {
+      "title": "Nhà Đầu Tư Thông Minh",
+      "description": "Benjamin Graham",
+      "id": "NZkKeHO_Q"
+    }
+  ],
+  "users": [
+    {
+      "name": "Huy Hoang",
+      "age": "21",
+      "address": "Hà Nội",
+      "phone": "0123123456",
+      "id": "goqYEcFye",
+      "email": "hoanghuy1@gmail.com",
+      "password": "123123",
+      "isAdmin": false
+    },
+    {
+      "name": "My Phung",
+      "age": "17",
+      "address": "Sài Gòn",
+      "phone": "0789123456",
+      "id": "SNFJkKNhR",
+      "email": "hoanghuy2@gmail.com",
+      "password": "123123",
+      "isAdmin": false
+    },
+    {
+      "name": "Admin",
+      "age": "18",
+      "address": "Sai Gon",
+      "phone": "0456789123",
+      "id": "3NIE_6dHw",
+      "email": "admin@gmail.com",
+      "password": "123123",
+      "isAdmin": true
+    }
+  ],
+  "transactions": [
+    {
+      "bookId": "GhMHmsKI1",
+      "userId": "BkECr8OZt",
+      "id": "7rL8ppkrx",
+      "isComplete": true
+    },
+    {
+      "bookId": "P0bvW9E3I",
+      "userId": "goqYEcFye",
+      "id": "VIL0fJSDm",
+      "isComplete": true
+    },
+    {
+      "userId": "goqYEcFye",
+      "bookId": "P0bvW9E3I",
+      "id": "8rDNM7fzW",
+      "isComplete": false
+    },
+    {
+      "userId": "SNFJkKNhR",
+      "bookId": "NZkKeHO_Q",
+      "id": "pi-Rxdxgz",
+      "isComplete": true
+    },
+    {
+      "userId": "goqYEcFye",
+      "bookId": "P0bvW9E3I",
+      "id": "3xZ0PJYOk",
+      "isComplete": false
+    }
+  ]
+}
