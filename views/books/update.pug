@@ -1,0 +1,16 @@
+extends ../../layouts/layout.pug
+
+block content
+  h1 Update
+
+  form(action="/books/update" method="POST")
+    .form-group
+      input(name="id" type="hidden" value=book.id)
+    .form-group
+      label(for='updateName') Name
+      input#updateName.form-control(name="title" type="text" value=book.title)
+    .form-group
+      label(for='updateAuthor') Athour
+      input#updateAuthor.form-control(name="description" type="text" value=book.description)
+
+    button.btn.btn-primary(type='submit') Update
